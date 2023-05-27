@@ -39,10 +39,11 @@ display: grid;
   background: hsl(185, 41%, 84%);
 }
 .header {
+
  background-position: center;
- height: 200px;
+ height: 120px;
  background-image: url("images/logo.svg");
- background-size: 10%;
+ background-size: 30%;
  background-repeat: no-repeat;
 
 }
@@ -70,7 +71,7 @@ display: grid;
   background: white;
   height: calc(100vh-150px);
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-direction: column;
   width: 100vw;
 }
@@ -81,7 +82,6 @@ display: grid;
   background: hsl(183, 100%, 15%);
   padding: 2rem;
   border-radius: 10px;
-  margin-top: 1.3rem;
   flex: 1;
   gap: 1rem;
  
@@ -102,20 +102,29 @@ display: grid;
 .tip {
   display: flex;
   justify-content: space-between;
+  
+}
+
+.amount-text {
+  margin-top: 1rem;
+
 }
 
 .percent-choice {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .reset-button {
   background: hsl(172, 67%, 45%);
   border: none;
-  margin-top: 5rem;
-  border-radius: 2px;
+  padding: 8px;
+  margin-top: 1rem; 
+  border-radius: 7px;
   opacity: 0.28;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .section-number {
@@ -137,6 +146,7 @@ display: grid;
   border-radius: 2px;
   text-align: right;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .bill:hover {
@@ -159,19 +169,20 @@ display: grid;
   outline: 2px solid #81E5D9;
 }
 
-
 .section {
   text-align: left;
   color: hsl(186, 14%, 43%);
   font-size: 12px;
   margin-top: 1.5rem;
+  margin-bottom: .5rem;
 }
+
+
 .input {
   background:hsl(189, 41%, 97%);
   border: none;
   padding: .5rem;
 }
-
 
 .button {
   border: none;
@@ -181,6 +192,7 @@ display: grid;
   padding: 10px;
   cursor: pointer;
   width: 100%;
+  font-size: 25px;
 }
 
 .button:hover {
@@ -188,14 +200,13 @@ display: grid;
   background-color: #81E5D9;
 }
 
-
 .highlight {
   background: hsl(172, 67%, 45%);
   color: black;
 }
 .amount {
   color: hsl(172, 67%, 45%);
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .input-custom {
@@ -208,12 +219,8 @@ display: grid;
   
 }
 .input-custom::placeholder {
-   
  color: hsl(186, 14%, 43%);
-
 }
-
-
 .input-custom:hover {
   outline: 2px solid #81E5D9;
 }
@@ -227,14 +234,29 @@ display: grid;
 @media screen and (min-width: 600px) {
    
   .container {
-width: 70vw;
+  width: 70vw;
   border-radius: 20px;
- flex-direction: row;
+  flex-direction: row;
   }
   
   .percent-choice {
- 
   grid-template-columns: 1fr 1fr 1fr;
   
 }
+.amount {
+font-size: 45px;}
+
+.reset-button {
+ margin-top: 7rem;  
+}
+
+.container {
+  gap: 3rem;
 } 
+
+.header {
+ margin-bottom: 70px;
+ background-size: 8%;
+
+}}
+
